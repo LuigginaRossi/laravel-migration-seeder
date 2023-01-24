@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->string('address');
         });
     }
 
@@ -29,5 +30,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('companies');
     }
-    
 };
